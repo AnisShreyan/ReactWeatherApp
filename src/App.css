@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* body {
+  margin: 0;
+  padding: 0;
+  background-image: url('./Assets/img/bg-clouds.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+} */
+
+.App {
+  text-align: center;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.form input {
+  outline: none;
+  border: none;
+  font-size: 1.2rem;
+  opacity: 0.6;
+  padding: 7px 10px 7px;
+  border-radius: 3px 0 0 3px;
+}
+
+.form button {
+  border: none;
+  font-size: 1.2rem;
+  padding: 7px 10px 7px;
+  color: white;
+  border-radius: 0 3px 3px 0;
+  background-color: #1666dd;
+  cursor: pointer;
+}
+
+
+.Heading {
+  margin: 3rem auto 1rem;
+}
+
+
+/* Samim's Css */
+
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  background-image: url("./Assets/img/bg-clouds.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.max-width-center {
+  max-width: 90rem;
+  /* margin: 0 auto; */
+  /* float: left; */
+  /* display: inline-block; */
+}
+
+@media (min-width: 55em) {
+  .even-columns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.wrapper {
+  /* background-image: url("../images/bg-clouds.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; */
+  display: flexbox;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 55em) {
+  .wrapper {
+    min-height: 75vh;
+  }
+}
+
+.header {
+  padding: 4rem 1rem 0rem;
+}
+
+@media (min-width: 55em) {
+  .header {
+    padding: 0 3rem 0rem;
+  }
+}
+
+.header h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.container {
+  padding: 0 1rem 4rem;
+}
+
+@media (min-width: 55em) {
+  .container {
+    padding: 4rem 3rem 4rem;
+  }
+}
+
+.columns {
+  gap: 4rem;
+}
+
+@media (min-width: 55em) {
+  .col-1 {
+    width: 80%;
+  }
+
+  .col-2 {
+    width: 100%;
+  }
+}
+
+.temperature {
+  padding-block: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.temperature__img {
+  width: 9rem;
+}
+
+.temperature__text {
+  font-size: 1rem;
+  line-height: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.temperature__text h3 {
+  font-size: 2.9em;
+  font-weight: 300;
+}
+
+@media (min-width: 22rem) {
+  .temperature__text h3 {
+    font-size: 5.7em;
+  }
+}
+
+.temperature__text h3 span {
+  display: inline-block;
+  font-size: 0.5em;
+}
+
+.temperature__text h3 sup {
+  display: inline-block;
+  font-size: 0.3em;
+  font-weight: 300;
+}
+
+.temperature__text p {
+  font-size: 1.5rem;
+  padding-left: 0.5rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.grid-container .item {
+  padding: 2rem 0rem;
+  text-align: center;
+  font-size: 0.7rem;
+}
+
+@media (min-width: 55em) {
+  .grid-container .item {
+    padding: 3.5rem 0rem;
+  }
+}
+
+@media (min-width: 22em) {
+  .grid-container .item {
+    font-size: 1rem;
+  }
+}
+
+.grid-container .item h3 {
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+.grid-container .item p {
+  font-size: 1em;
+  font-weight: 300;
+}
+
+
+/* Form */
+
+@media screen and (max-width: 440px) {
+  .form button {
+    display: none;
+  }
+
+  .form input {
+    border-radius: 0.3rem;
+  }
+}
